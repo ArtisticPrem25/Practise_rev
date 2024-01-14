@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    overflow: auto;
+}
+
+body,html{
+    width:100%;
+    height:100%;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+.slide1{
+    width: 80vw;
+    margin: auto;
+    height: 30vw;
+    margin-top: 8em;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardslide1 {
+    width: 25%;
+    margin: 0 5px;
+    background-color: aqua;
+}
+
+.slide2 {
+    width: 80vw;
+    height: 30vw;
+    margin: auto;
+    margin-top: 4em;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardslide2 {
+    width: 25%;
+    margin: 0 5px;
+    background-color: aqua;
+}
+
+.slide3 {
+    width: 80vw;
+    height: 30vw;
+    margin: auto;
+    margin-top: 4em;
+    background-color: rgb(229, 255, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardslide3 {
+    width: 25%;
+    margin: 0 5px;
+    background-color: rgb(162, 0, 255);
+}
+
+/* Navigation Bar  */
+nav{
+    background-color: rgb(161, 160, 160);
+}
+
+nav ul{
+    background-color: rgb(172, 19, 19);
+    width:50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    padding:9px 18px;
+    background-color: rgb(134, 126, 126);
+}
+
+.link { 
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.5s ease-out;
+}
+
+/* this is written for above transition property */
+.link::before {
+    bottom: 0;
+    left: 0;
+}
+
+.link:hover::before{
+    transform: scaleX(1);
+}
